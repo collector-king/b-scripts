@@ -1,524 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" class="hide-scroll-bar h-screen w-screen bg-black">
-    <!-- Global Metadata -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="generator" content="Astro v5.1.1">
-    <meta content="#2B2D31" name="theme-color">
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://sirius.menu/get-started/">
-    <!-- Primary Meta Tags -->
-    <title>Get Started</title>
-    <meta name="title" content="Get Started">
-    <meta name="description" content="Discover the most powerful script, with no boundaries and no compromises. With a range of features and a sleek interface, it's no surprise it's the leader in scripts.">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sirius.menu/get-started/">
-    <meta property="og:title" content="Get Started">
-    <meta property="og:description" content="Discover the most powerful script, with no boundaries and no compromises. With a range of features and a sleek interface, it's no surprise it's the leader in scripts.">
-    <meta property="og:image" content="/assets/images/png/embedBanner.png">
-    <meta property="og:site_name" content="Get Started">
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sirius.menu/get-started/">
-    <meta property="twitter:title" content="Get Started">
-    <meta property="twitter:description" content="Discover the most powerful script, with no boundaries and no compromises. With a range of features and a sleek interface, it's no surprise it's the leader in scripts.">
-    <meta property="twitter:image" content="/assets/images/png/embedBanner.png">
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.sirius.menu/assets/favicons/apple-touch-icon.png?v=4">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.sirius.menu/assets/favicons/favicon-32x32.png?v=4">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.sirius.menu/assets/favicons/favicon-16x16.png?v=4">
-    <link rel="manifest" href="https://cdn.sirius.menu/assets/favicons/site.webmanifest?v=4">
-    <link rel="mask-icon" href="https://cdn.sirius.menu/assets/favicons/safari-pinned-tab.svg?v=4" color="#000000">
-    <link rel="icon" href="https://cdn.sirius.menu/assets/favicons/favicon.ico?v=4">
-    <link rel="shortcut icon" href="https://cdn.sirius.menu/assets/favicons/favicon.ico?v=4">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-TileImage" content="https://cdn.sirius.menu/assets/favicons/mstile-144x144.png?v=4">
-    <meta name="msapplication-config" content="https://cdn.sirius.menu/assets/favicons/browserconfig.xml?v=4">
-    <link rel="stylesheet" href="/_astro/get-started.BO99qId-.css">
-    <link rel="stylesheet" href="/_astro/privacy.Bw8UQGA7.css">
-    <style>
-        pre[class*=language-],code[class*=language-] {
-            color: #d4d4d4;
-            font-size: 13px;
-            text-shadow: none;
-            font-family: Menlo,Monaco,Consolas,Andale Mono,Ubuntu Mono,Courier New,monospace;
-            direction: ltr;
-            text-align: left;
-            white-space: pre;
-            word-spacing: normal;
-            word-break: normal;
-            line-height: 1.5;
-            -moz-tab-size: 4;
-            -o-tab-size: 4;
-            tab-size: 4;
-            -webkit-hyphens: none;
-            hyphens: none
-        }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moving Gradient Background</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        pre[class*=language-]::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] *::-moz-selection,code[class*=language-] *::-moz-selection {
-            text-shadow: none;
-            background: #264f78
-        }
+    /* Fullscreen background */
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: monospace;
+      background: linear-gradient(-45deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
+    }
 
-        pre[class*=language-]::selection,code[class*=language-]::selection,pre[class*=language-] *::selection,code[class*=language-] *::selection {
-            text-shadow: none;
-            background: #264f78
-        }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
 
-        @media print {
-            pre[class*=language-],code[class*=language-] {
-                text-shadow: none
-            }
-        }
+    /* Code block styling */
+    pre {
+      background: rgba(0, 0, 0, 0.7);
+      color: #00ff88;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      max-width: 90%;
+      overflow-x: auto;
+      font-size: 1rem;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
 
-        pre[class*=language-] {
-            padding: 1em;
-            margin: .5em 0;
-            overflow: auto;
-            background: #1e1e1e
-        }
-
-        :not(pre)>code[class*=language-] {
-            padding: .1em .3em;
-            border-radius: .3em;
-            color: #db4c69;
-            background: #1e1e1e
-        }
-
-        .namespace {
-            opacity: .7
-        }
-
-        .token.doctype .token.doctype-tag {
-            color: #569cd6
-        }
-
-        .token.doctype .token.name {
-            color: #9cdcfe
-        }
-
-        .token.comment,.token.prolog {
-            color: #6a9955
-        }
-
-        .token.punctuation,.language-html .language-css .token.punctuation,.language-html .language-javascript .token.punctuation {
-            color: #d4d4d4
-        }
-
-        .token.property,.token.tag,.token.boolean,.token.number,.token.constant,.token.symbol,.token.inserted,.token.unit {
-            color: #b5cea8
-        }
-
-        .token.selector,.token.attr-name,.token.string,.token.char,.token.builtin,.token.deleted {
-            color: #ce9178
-        }
-
-        .language-css .token.string.url {
-            text-decoration: underline
-        }
-
-        .token.operator,.token.entity {
-            color: #d4d4d4
-        }
-
-        .token.operator.arrow {
-            color: #569cd6
-        }
-
-        .token.atrule {
-            color: #ce9178
-        }
-
-        .token.atrule .token.rule {
-            color: #c586c0
-        }
-
-        .token.atrule .token.url {
-            color: #9cdcfe
-        }
-
-        .token.atrule .token.url .token.function {
-            color: #dcdcaa
-        }
-
-        .token.atrule .token.url .token.punctuation {
-            color: #d4d4d4
-        }
-
-        .token.keyword {
-            color: #569cd6
-        }
-
-        .token.keyword.module,.token.keyword.control-flow {
-            color: #c586c0
-        }
-
-        .token.function,.token.function .token.maybe-class-name {
-            color: #dcdcaa
-        }
-
-        .token.regex {
-            color: #d16969
-        }
-
-        .token.important {
-            color: #569cd6
-        }
-
-        .token.italic {
-            font-style: italic
-        }
-
-        .token.constant {
-            color: #9cdcfe
-        }
-
-        .token.class-name,.token.maybe-class-name {
-            color: #4ec9b0
-        }
-
-        .token.console,.token.parameter,.token.interpolation {
-            color: #9cdcfe
-        }
-
-        .token.punctuation.interpolation-punctuation,.token.boolean {
-            color: #569cd6
-        }
-
-        .token.property,.token.variable,.token.imports .token.maybe-class-name,.token.exports .token.maybe-class-name {
-            color: #9cdcfe
-        }
-
-        .token.selector,.token.escape {
-            color: #d7ba7d
-        }
-
-        .token.tag {
-            color: #569cd6
-        }
-
-        .token.tag .token.punctuation,.token.cdata {
-            color: gray
-        }
-
-        .token.attr-name {
-            color: #9cdcfe
-        }
-
-        .token.attr-value,.token.attr-value .token.punctuation {
-            color: #ce9178
-        }
-
-        .token.attr-value .token.punctuation.attr-equals {
-            color: #d4d4d4
-        }
-
-        .token.entity {
-            color: #569cd6
-        }
-
-        .token.namespace {
-            color: #4ec9b0
-        }
-
-        pre[class*=language-javascript],code[class*=language-javascript],pre[class*=language-jsx],code[class*=language-jsx],pre[class*=language-typescript],code[class*=language-typescript],pre[class*=language-tsx],code[class*=language-tsx] {
-            color: #9cdcfe
-        }
-
-        pre[class*=language-css],code[class*=language-css] {
-            color: #ce9178
-        }
-
-        pre[class*=language-html],code[class*=language-html] {
-            color: #d4d4d4
-        }
-
-        .language-regex .token.anchor {
-            color: #dcdcaa
-        }
-
-        .language-html .token.punctuation {
-            color: gray
-        }
-
-        pre[class*=language-]>code[class*=language-] {
-            position: relative;
-            z-index: 1
-        }
-
-        .line-highlight.line-highlight {
-            background: #f7ebc6;
-            box-shadow: inset 5px 0 #f7d87c;
-            z-index: 0
-        }
-
-        #navBar[data-astro-cid-5blmo7yk] {
-            background-color: #1d1d1eb3;
-            transition: background-color .5s cubic-bezier(.28,.11,.32,1);
-            transition-property: background-color,-webkit-backdrop-filter;
-            transition-property: background-color,backdrop-filter;
-            transition-property: background-color,backdrop-filter,-webkit-backdrop-filter
-        }
-    </style>
-    <script type="module" src="/_astro/page.V2R8AmkL.js"></script>
-    <script>
-        !(function(w, p, f, c) {
-            if (!window.crossOriginIsolated && !navigator.serviceWorker)
-                return;
-            c = w[p] = Object.assign(w[p] || {}, {
-                "lib": "/~partytown/",
-                "debug": false
-            });
-            c[f] = (c[f] || [])
-        }
-        )(window, 'partytown', 'forward');
-        /* Partytown 0.10.3-dev1734732935152 - MIT builder.io */
-        const t = {
-            preserveBehavior: !1
-        }
-          , e = e => {
-            if ("string" == typeof e)
-                return [e, t];
-            const [n,r=t] = e;
-            return [n, {
-                ...t,
-                ...r
-            }]
-        }
-          , n = Object.freeze((t => {
-            const e = new Set;
-            let n = [];
-            do {
-                Object.getOwnPropertyNames(n).forEach((t => {
-                    "function" == typeof n[t] && e.add(t)
-                }
-                ))
-            } while ((n = Object.getPrototypeOf(n)) !== Object.prototype);
-            return Array.from(e)
-        }
-        )());
-        !function(t, r, o, i, a, s, c, d, l, p, u=t, f) {
-            function h() {
-                f || (f = 1,
-                "/" == (c = (s.lib || "/~partytown/") + (s.debug ? "debug/" : ""))[0] && (l = r.querySelectorAll('script[type="text/partytown"]'),
-                i != t ? i.dispatchEvent(new CustomEvent("pt1",{
-                    detail: t
-                })) : (d = setTimeout(v, 999999999),
-                r.addEventListener("pt0", w),
-                a ? y(1) : o.serviceWorker ? o.serviceWorker.register(c + (s.swPath || "partytown-sw.js"), {
-                    scope: c
-                }).then((function(t) {
-                    t.active ? y() : t.installing && t.installing.addEventListener("statechange", (function(t) {
-                        "activated" == t.target.state && y()
-                    }
-                    ))
-                }
-                ), console.error) : v())))
-            }
-            function y(e) {
-                p = r.createElement(e ? "script" : "iframe"),
-                t._pttab = Date.now(),
-                e || (p.style.display = "block",
-                p.style.width = "0",
-                p.style.height = "0",
-                p.style.border = "0",
-                p.style.visibility = "hidden",
-                p.setAttribute("aria-hidden", !0)),
-                p.src = c + "partytown-" + (e ? "atomics.js?v=0.10.3-dev1734732935152" : "sandbox-sw.html?" + t._pttab),
-                r.querySelector(s.sandboxParent || "body").appendChild(p)
-            }
-            function v(n, o) {
-                for (w(),
-                i == t && (s.forward || []).map((function(n) {
-                    const [r] = e(n);
-                    delete t[r.split(".")[0]]
-                }
-                )),
-                n = 0; n < l.length; n++)
-                    (o = r.createElement("script")).innerHTML = l[n].innerHTML,
-                    o.nonce = s.nonce,
-                    r.head.appendChild(o);
-                p && p.parentNode.removeChild(p)
-            }
-            function w() {
-                clearTimeout(d)
-            }
-            s = t.partytown || {},
-            i == t && (s.forward || []).map((function(r) {
-                const [o,{preserveBehavior: i}] = e(r);
-                u = t,
-                o.split(".").map((function(e, r, o) {
-                    var a;
-                    u = u[o[r]] = r + 1 < o.length ? u[o[r]] || (a = o[r + 1],
-                    n.includes(a) ? [] : {}) : ( () => {
-                        let e = null;
-                        if (i) {
-                            const {methodOrProperty: n, thisObject: r} = ( (t, e) => {
-                                let n = t;
-                                for (let t = 0; t < e.length - 1; t += 1)
-                                    n = n[e[t]];
-                                return {
-                                    thisObject: n,
-                                    methodOrProperty: e.length > 0 ? n[e[e.length - 1]] : void 0
-                                }
-                            }
-                            )(t, o);
-                            "function" == typeof n && (e = (...t) => n.apply(r, ...t))
-                        }
-                        return function() {
-                            let n;
-                            return e && (n = e(arguments)),
-                            (t._ptf = t._ptf || []).push(o, arguments),
-                            n
-                        }
-                    }
-                    )()
-                }
-                ))
-            }
-            )),
-            "complete" == r.readyState ? h() : (t.addEventListener("DOMContentLoaded", h),
-            t.addEventListener("load", h))
-        }(window, document, navigator, top, window.crossOriginIsolated);
-        ;(e => {
-            e.addEventListener("astro:before-swap", e => {
-                let r = document.body.querySelector("iframe[src*='/~partytown/']");
-                if (r)
-                    e.newDocument.body.append(r)
-            }
-            )
-        }
-        )(document);
-    </script>
-    <body class="flex h-full w-full items-center justify-center">
-        <nav id="navBar" class="fixed top-0 left-0 z-50 h-14 w-full -translate-y-full opacity-0 saturate-[180%] backdrop-blur-[20px] transition-all duration-700 ease-in-out" data-astro-cid-5blmo7yk>
-            <div class="mx-auto flex h-full w-full max-w-screen-xl flex-wrap items-center justify-between px-4" data-astro-cid-5blmo7yk>
-                <a href="/" class="flex cursor-default items-center opacity-0 duration-700 ease-in-out" data-astro-cid-5blmo7yk>
-                    <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Layer_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201315.24%201546.03'%3e%3cdefs%3e%3cstyle%3e.cls-1{fill:%23fff;}%3c/style%3e%3c/defs%3e%3cg%20id='Layer_1-2'%3e%3cg%3e%3cpath%20class='cls-1'%20d='m1046.7,106.38c0,.13-.13.26-.13.26l-14.81,43.14-32.61,94.85-.39-.52-59.9,188.39c-23.77-3.9-47.94-5.85-72.24-5.85-53.01,0-106.93,9.48-159.42,29.36-87.44,33.26-154.88,104.59-183.2,193.72l-147.47,463.71c-152.66-25.08-288.18-128.5-347.17-283.5C9.48,777.45,0,723.54,0,670.52c0-180.86,110.18-351.32,289.35-419.41L929.89,6.86l2.34-.91c.39-.13.78-.26,1.17-.39,65.22-24.29,129.67,35.08,113.3,100.83Z'/%3e%3cpath%20class='cls-1'%20d='m268.55,1439.64c0-.13.13-.26.13-.26l14.81-43.14,32.61-94.85.39.52,59.9-188.39c23.77,3.9,47.94,5.85,72.24,5.85,53.01,0,106.93-9.48,159.42-29.36,87.44-33.26,154.88-104.59,183.2-193.72l147.47-463.71c152.66,25.08,288.18,128.5,347.17,283.5,19.88,52.49,29.36,106.41,29.36,159.42,0,180.86-110.18,351.32-289.35,419.41l-640.54,244.26-2.34.91c-.39.13-.78.26-1.17.39-65.22,24.29-129.67-35.08-113.3-100.83Z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="mr-3 h-6 sm:h-8" alt="Sirius Logo" data-astro-cid-5blmo7yk>
-                </a>
-                <div class="flex items-center gap-4 text-xs [line-height:1.33337] lg:order-2" data-astro-cid-5blmo7yk>
-                    <div class="links flex items-center gap-1 opacity-0 duration-700 ease-in-out" data-astro-cid-5blmo7yk>
-                        <a href="https://blog.sirius.menu/" target="_blank" class="font-light text-white opacity-80 hover:text-[#147ce5] hover:opacity-100" data-astro-cid-5blmo7yk>Newsroom</a>
-                    </div>
-                    <div class="links flex items-center gap-1 opacity-0 duration-700 ease-in-out" data-astro-cid-5blmo7yk>
-                        <a href="https://docs.sirius.menu" target="_blank" class="font-light text-white opacity-80 hover:text-[#147ce5] hover:opacity-100" data-astro-cid-5blmo7yk>Documentation</a>
-                    </div>
-                    <div class="links flex items-center gap-1 opacity-0 duration-700 ease-in-out" data-astro-cid-5blmo7yk>
-                        <a href="https://discord.sirius.menu/" target="_blank" class="font-light text-white opacity-80 hover:text-[#147ce5] hover:opacity-100" data-astro-cid-5blmo7yk>Discord</a>
-                    </div>
-                    <button id="navBarBuyButton" class="inline-block min-w-[23px] cursor-pointer whitespace-nowrap rounded-xl border-0 bg-[#0071e3] px-[11px] py-1 text-center font-normal text-white opacity-0 outline-0 transition-all duration-500 [letter-spacing:-0.01em] hover:bg-[#147ce5]" data-astro-cid-5blmo7yk>Buy</button>
-                </div>
-            </div>
-            <div id="navBarbanner" class="hidden w-full opacity-0 transition-all duration-500 ease-in-out" data-astro-cid-5blmo7yk>
-                <div class="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8" data-astro-cid-5blmo7yk>
-                    <div class="pr-16 text-center sm:px-16" data-astro-cid-5blmo7yk>
-                        <p id="bannerText" class="font-medium" data-astro-cid-5blmo7yk></p>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <script type="module">
-            const o = document.getElementById("navBar")
-              , s = o.querySelectorAll(".opacity-0:not(#banner)");
-            o.classList.remove("-translate-y-full", "opacity-0");
-            s.forEach( (e, a) => {
-                setTimeout( () => {
-                    e.classList.remove("opacity-0")
-                }
-                , 250 * a),
-                a === s.length - 1 && setTimeout( () => {
-                    n.classList.remove("opacity-0")
-                }
-                , 250 * a + 250)
-            }
-            );
-            document.getElementById("navBarBuyButton").addEventListener("click", () => {
-                document.getElementById("featureList").scrollIntoView({
-                    behavior: "smooth"
-                })
-            }
-            );
-            let t;
-            const n = document.getElementById("navBarbanner")
-              , c = document.getElementById("bannerText");
-            async function r() {
-                await fetch("https://raw.githubusercontent.com/shlexware/SiriusDependencies/main/banner.json").then(e => e.json()).then(e => {
-                    t = e
-                }
-                ),
-                c.innerHTML = t.text,
-                c.style.color = t.txtcolor,
-                n.style.backgroundColor = t.bgcolor,
-                t.show === !0 && (n.classList.remove("hidden"),
-                n.addEventListener("click", () => {
-                    o.classList.add("-translate-y-full", "opacity-0"),
-                    setTimeout( () => {
-                        n.classList.add("hidden")
-                    }
-                    , 500)
-                }
-                ))
-            }
-            r();
-        </script>
-        <div class="mx-auto flex h-[calc(100%-56px)] w-full max-w-screen-md items-center justify-center px-4 text-left text-[#979797] md:px-8">
-            <div class="flex flex-col">
-                <h1 class="mb-4 text-4xl font-bold text-white">Get Started</h1>
-                <div class="flex items-center">
-                    <div class="relative">
-                        <pre style="user-select: none;" class="language-lua peer relative z-0 max-w-xs cursor-pointer rounded-md transition-opacity duration-300 hover:opacity-40 md:max-w-none" data-output="2-17">
-                            <code class="language-lua">
-                                <span class="token function">loadstring</span>
-                                <span class="token punctuation">(</span>
-                                game<span class="token punctuation">:</span>
-                                <span class="token function">HttpGet</span>
-                                <span class="token punctuation">(</span>
-                                <span class="token string">'https://sirius.menu/sirius'</span>
-                                <span class="token punctuation">)</span>
-                                <span class="token punctuation">)</span>
-                                <span class="token punctuation">(</span>
-                                <span class="token punctuation">)</span>
-                            </code>
-                        </pre>
-                        <span id="icon" style="transition-property: opacity, transform; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);transition-duration: 150ms;" class="pointer-events-none absolute left-1/2 top-1/2 ml-2 flex -translate-x-1/2 -translate-y-1/2 flex-row-reverse items-center justify-center gap-2 p-2 text-neutral-400 opacity-0 duration-300 peer-hover:scale-100 peer-hover:opacity-100">
-                            Tap to copy
-
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.9736" height="22.1396">
-                                <g>
-                                    <rect height="22.1396" opacity="0" width="17.9736" x="0" y="0"></rect>
-                                    <path d="M4.2627 2.75977L4.2627 14.9678C4.2627 16.7959 5.16797 17.7275 6.9873 17.7275L15.249 17.7275C17.0596 17.7275 17.9736 16.7959 17.9736 14.9678L17.9736 2.75977C17.9736 0.922852 17.0596 0 15.249 0L6.9873 0C5.16797 0 4.2627 0.922852 4.2627 2.75977ZM8.97363 3.01465C8.58691 3.01465 8.41113 2.75977 8.41113 2.49609L8.41113 2.31152C8.41113 2.03906 8.58691 1.79297 8.97363 1.79297L13.2627 1.79297C13.6406 1.79297 13.8252 2.03906 13.8252 2.31152L13.8252 2.49609C13.8252 2.75977 13.6406 3.01465 13.2627 3.01465Z" fill="currentColor" fill-opacity="0.85"></path>
-                                    <path d="M0 19.3535C0 21.1904 0.905273 22.1133 2.72461 22.1133L10.9863 22.1133C12.8057 22.1133 13.7109 21.1816 13.7109 19.3535L13.7109 12.4893C13.7109 11.3643 13.5791 10.8721 12.876 10.1514L8.0332 5.2207C7.36523 4.53516 6.81152 4.38574 5.82715 4.38574L2.72461 4.38574C0.914062 4.38574 0 5.30859 0 7.14551Z" fill="#1e1e1e"></path>
-                                    <path d="M0 19.3535C0 21.1904 0.905273 22.1133 2.72461 22.1133L10.9863 22.1133C12.8057 22.1133 13.7109 21.1816 13.7109 19.3535L13.7109 12.4893C13.7109 11.3643 13.5791 10.8721 12.876 10.1514L8.0332 5.2207C7.36523 4.53516 6.81152 4.38574 5.82715 4.38574L2.72461 4.38574C0.914062 4.38574 0 5.30859 0 7.14551ZM1.41504 19.3271L1.41504 7.16309C1.41504 6.30176 1.88086 5.80078 2.79492 5.80078L5.67773 5.80078L5.67773 10.8984C5.67773 12.0059 6.24023 12.5596 7.33008 12.5596L12.2959 12.5596L12.2959 19.3271C12.2959 20.2061 11.8213 20.6982 10.916 20.6982L2.78613 20.6982C1.88086 20.6982 1.41504 20.2061 1.41504 19.3271ZM7.49707 11.2324C7.14551 11.2324 7.00488 11.0918 7.00488 10.7402L7.00488 6.12598L12.0234 11.2324Z" fill="currentColor" fill-opacity="0.85"></path>
-                                </g>
-                            </svg>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script type="module">
-            const t = document.querySelector("pre")
-              , e = document.getElementById("icon");
-            if (e && t) {
-                let i = e.innerHTML;
-                t.addEventListener("click", () => {
-                    navigator.clipboard.writeText("loadstring(game:HttpGet('https://sirius.menu/sirius'))()"),
-                    e.classList.add("!text-green-400"),
-                    e.innerHTML = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.9062" height="23.918"> <g> <rect height="23.918" opacity="0" width="23.9062" x="0" y="0"/> <path d="M11.9531 23.9062C18.4922 23.9062 23.9062 18.4805 23.9062 11.9531C23.9062 5.41406 18.4805 0 11.9414 0C5.41406 0 0 5.41406 0 11.9531C0 18.4805 5.42578 23.9062 11.9531 23.9062ZM11.9531 21.9141C6.42188 21.9141 2.00391 17.4844 2.00391 11.9531C2.00391 6.42188 6.41016 1.99219 11.9414 1.99219C17.4727 1.99219 21.9141 6.42188 21.9141 11.9531C21.9141 17.4844 17.4844 21.9141 11.9531 21.9141Z" fill="currentColor" fill-opacity="0.85"/> <path d="M10.6641 17.5195C11.0508 17.5195 11.3789 17.332 11.6133 16.9688L16.9688 8.54297C17.0977 8.30859 17.25 8.05078 17.25 7.79297C17.25 7.26562 16.7812 6.92578 16.2891 6.92578C15.9961 6.92578 15.7031 7.11328 15.4805 7.45312L10.6172 15.2578L8.30859 12.2695C8.02734 11.8945 7.76953 11.8008 7.44141 11.8008C6.9375 11.8008 6.53906 12.2109 6.53906 12.7266C6.53906 12.9844 6.64453 13.2305 6.80859 13.4531L9.66797 16.9688C9.96094 17.3555 10.2773 17.5195 10.6641 17.5195Z" fill="currentColor" fill-opacity="0.85"/> </g> </svg>',
-                    setTimeout( () => {
-                        e.innerHTML = i,
-                        e.classList.remove("!text-green-400")
-                    }
-                    , 3e3)
-                }
-                )
-            } else
-                console.warn("Failed to find requried elements...");
-        </script>
-        <!-- Cloudflare Pages Analytics -->
-        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "74ab74eaafb34730a5dad03e241f9918"}'></script>
-        <!-- Cloudflare Pages Analytics -->
-        <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"f6478efd58cc4cd68eb6884b3ab4c2be","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-    </body>
+    pre:hover {
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+  <pre style="user-select: none;" class="language-lua peer relative z-0 max-w-xs cursor-pointer rounded-md transition-opacity duration-300 hover:opacity-40 md:max-w-none" data-output="2-17">
+<code class="language-lua">
+loadstring(game:HttpGet('https://sirius.menu/sirius'))()
+</code>
+  </pre>
+</body>
 </html>
