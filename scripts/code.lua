@@ -1,1 +1,1 @@
-pls wait
+print("Eee")
