@@ -1,0 +1,12 @@
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+  
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteCond %{REQUEST_URI} \.lua$ [NC]
+    RewriteRule .* - [F,L]
+</IfModule>
+
+# Custom 404 Error Page
+ErrorDocument 404 /404.html
