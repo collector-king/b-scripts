@@ -7,6 +7,6 @@ if (preg_match('/Mozilla|Chrome|Firefox|Safari|Edge|Opera|MSIE|Trident|curl|wget
     http_response_code(403);
     die("Forbidden");
 }
-echo "print('Sirius loader started!')\n";
+echo "print('Sybau')\n";
 echo "-- rest of your Lua here\n";
 ?>
